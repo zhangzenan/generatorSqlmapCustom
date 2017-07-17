@@ -4,8 +4,6 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"> 
    
 <generatorConfiguration> 
-  <!-- classPathEntry:数据库的JDBC驱动的jar包地址--> 
-  <classPathEntry location="E:\oracle\product\10.2.0\db_1\jdbc\lib\ojdbc14.jar" /> 
 <context id="DB2Tables" targetRuntime="MyBatis3"> 
   <commentGenerator> 
     <!-- 是否去除自动生成的注释 true：是 ： false:否 --> 
@@ -13,7 +11,7 @@
     <!--数据库连接的信息：驱动类、连接地址、用户名、密码 --> 
   </commentGenerator> 
   <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
-          connectionURL="jdbc:mysql://172.17.6.219:3306/mybatis?autoReconnect=true&useUnicode=true&characterEncoding=utf8" 
+          connectionURL="jdbc:mysql://172.17.6.219:3306/mybatis" 
           userId="sa" 
           password="sa123.com"> 
   </jdbcConnection> 
